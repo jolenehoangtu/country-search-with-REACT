@@ -1,0 +1,19 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+    /*font*/
+    --titilliumWeb: 'Titillium Web-Black', sans-serif,;
+
+    /*color*/
+    --light-brown : #e181d9;
+    --middle-brown : rgb(147, 19, 117);
+    --dark-brown : rgb(50, 5, 45);
+    --middle-grey : rgb(204, 204, 204);
+    --light-grey : #efefef;
+    --grey : rgba(211, 211, 211, 0.5);
+}

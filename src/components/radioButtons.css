@@ -1,0 +1,31 @@
+input[type="radio"] {
+  display: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.radioBtnLabel{
+    display: inline-block;
+    width: 10rem;
+    background-color: var(--light-brown);
+    padding: 1.1rem 0;
+    margin: 0.5rem;
+    margin-top: 1rem;
+    box-shadow: 3px 5px 5px var(--middle-grey);
+    letter-spacing: 2px;
+    text-align: center;
+    cursor : pointer;
+    border-radius: 3px;
+    color: var(--light-yellow);
+}
+
+.radioBtnLabel:hover{
+    background-color: var(--middle-brown);
+}
+
+input[type="radio"]:checked + .radioBtnLabel{
+    background-color: var(--dark-brown);
+    color: var(--middle-grey);
+}

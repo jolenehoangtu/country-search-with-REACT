@@ -1,0 +1,31 @@
+.resultSection {
+  width: 100%;
+  padding-top: 5rem;
+}
+
+.countryList{
+  padding-bottom : 3rem;
+}
+
+.eachCountry {
+  width: 90%;
+  height: 110px;
+  margin: 1rem auto;
+  text-align: center;
+  padding-top: 45px;
+  color: var(--light-grey);
+  font-weight: 700;
+  font-size : 1.2rem;
+  line-height: 1.2rem;
+  text-shadow: 1px 2px 2px var(--dark-brown);
+}
+
+.noResult{
+  text-align : center;
+  font-size : 3rem;
+  color : var(--light-grey);
+  background-color : var(--grey);
+  border-radius : 20px;
+  width : 10em;
+  margin : 1rem auto;
+}

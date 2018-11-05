@@ -1,0 +1,8 @@
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  font-family: "Montserrat", sans-serif;
+  background: url(./assets/world.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family : var(--titilliumWeb);                 
+}
