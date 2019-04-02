@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 3rem;
-  background-color: b
+  background-color: b;
 }
 
 .title {
@@ -13,7 +13,7 @@
   font-family: fantasy;
 }
 
-.totalNumText{
+.totalNumText {
   margin: 2rem;
 }
 
@@ -24,7 +24,7 @@
   font-size: 1.3rem;
 }
 
-.resultText{
+.resultText {
   font-weight: 800;
   font-size: 1.5rem;
 }

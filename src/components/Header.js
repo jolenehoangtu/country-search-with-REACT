@@ -1,12 +1,12 @@
-import React from "react";
-import { startsWith, includes } from "../utils/searchFunctions";
-import "./header.css";
+import React from 'react';
+import { startsWith, includes } from '../utils/searchFunctions';
+import './header.css';
 
 function Header({ countries, include, searchInput }) {
   const grammerForIncludeResult = () => {
-    return (includes(countries, searchInput).length === 1) ? (
+    return includes(countries, searchInput).length === 1 ? (
       <p className="resultText">
-        The country includes{" "}
+        The country includes{' '}
         <span className="hightlightResult">"{searchInput}"</span> is
         <span className="hightlightResult">
           {includes(countries, searchInput).length}
@@ -14,7 +14,7 @@ function Header({ countries, include, searchInput }) {
       </p>
     ) : (
       <p className="resultText">
-        The countries include{" "}
+        The countries include{' '}
         <span className="hightlightResult">"{searchInput}"</span> are
         <span className="hightlightResult">
           {includes(countries, searchInput).length}
@@ -24,9 +24,9 @@ function Header({ countries, include, searchInput }) {
   };
 
   const grammerForStartwithResult = () => {
-    return (includes(countries, searchInput).length === 1) ? (
+    return includes(countries, searchInput).length === 1 ? (
       <p className="resultText">
-        The country starts with{" "}
+        The country starts with{' '}
         <span className="hightlightResult">"{searchInput}"</span> is
         <span className="hightlightResult">
           {startsWith(countries, searchInput).length}
@@ -34,7 +34,7 @@ function Header({ countries, include, searchInput }) {
       </p>
     ) : (
       <p className="resultText">
-        The countries start with{" "}
+        The countries start with{' '}
         <span className="hightlightResult">"{searchInput}"</span> are
         <span className="hightlightResult">
           {startsWith(countries, searchInput).length}
@@ -47,7 +47,7 @@ function Header({ countries, include, searchInput }) {
     <header className="headerSection">
       <h1 className="title">Let's play !</h1>
       <p className="totalNumText">
-        Total number of countries are{" "}
+        Total number of countries are{' '}
         <span className="totalNum">{countries.length}</span>
       </p>
       {include ? grammerForIncludeResult() : grammerForStartwithResult()}

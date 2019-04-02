@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import "./App.css";
-import { countries } from "./Data/countries";
-import Header from "./components/Header";
-import SearchForm from "./components/SearchForm";
-import ResultSection from "./components/ResultSection";
+import React, { Component } from 'react';
+import './App.css';
+import { countries } from './Data/countries';
+import Header from './components/Header';
+import SearchForm from './components/SearchForm';
+import ResultSection from './components/ResultSection';
 
 class App extends Component {
   state = {
-    searchInput: "",
+    searchInput: '',
     include: true
   };
 
@@ -35,7 +35,6 @@ class App extends Component {
           handleRadioButton={this.handleRadioButton}
           include={this.state.include}
           handleOnChange={this.handleOnChange}
-          
         />
         <ResultSection
           countries={countries}
@@ -46,5 +45,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;
